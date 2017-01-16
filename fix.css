@@ -1,0 +1,218 @@
+.entry-emotions {
+  float: left;
+  clear: both;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.entry-emotions ul li {
+  display:inline-block;
+  margin-left: 5px; 
+}
+
+.entry-emotions ul li.li-count {
+  margin-right: 15px;
+}
+
+
+.inner-emotions {
+  float: left;
+}
+
+.all-emotions {
+    font-size: 0;
+    padding: 2px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.emotion-node {
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -webkit-backface-visibility: hidden;
+    cursor: pointer;
+    display: inline-block;
+    /*    
+    height: 24px;
+    width: 24px;
+    */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: scale(1, 1) translateY(.0001px);
+    transform-origin: 50% 100%;
+    z-index: 2;
+    margin-left: 10px;
+}
+
+.emotion-wrapper {
+    transform: scale(.8, .8) translate(0, 0);
+    transition: transform 200ms ease;
+}
+
+.emotion-icon-style_1, .emotion-icon-style_5 {
+    height: 24px;
+    width: 24px;
+}
+
+.emotion-icon-static {
+    display: inline-block;
+    position: relative;
+     opacity: 0.8;
+}
+
+.emotion-icon {
+    display: inline-block;
+    position: relative;
+     transition: 0.2s ease;
+     opacity: 0.3;
+}
+
+.emotion-icon:hover {
+    transform: scale(3.5, 3.5);
+    opacity: 1;
+}
+
+.emotion-icon:hover + .emotion-title-wrapper>.emotion-title-text { opacity:1;}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_1 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e1.png");
+    background-repeat: no-repeat;
+   background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_2 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e2.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_3 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e3.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_4 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e4.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_5 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e5.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_6 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e6.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_7 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e7.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_8 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e8.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_9 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e9.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+.emotion-icon-style_2 .emotion-icon-style_5.emotion-icon_10 {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/e10.png");
+    background-repeat: no-repeat;
+       background-size: 24px 24px;
+}
+
+
+.emotion-icon .emotion-icon-style_4.emotion-icon-style_4 {
+    transform: none;
+}
+.emotion-icon-style_2 .emotion-icon-style_5, .emotion-icon-style_2 ._9_0 {
+    display: block;
+    line-height: 1;
+}
+.emotion-icon .emotion-icon-style_4 {
+    display: block;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -50%;
+    position: absolute;
+    top: 50%;
+}
+.emotion-icon-style_1, .emotion-icon-style_5 {
+    height: 24px;
+    width: 24px;
+}
+.emotion-icon-style_4 {
+    display: inline-block;
+}
+
+.emotion-title-wrapper {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    transform: translateX(-50%);
+}
+
+
+.emotion-title-text {
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0; 
+    overflow: hidden;
+    text-align: center;
+    padding: 3px 8px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: opacity 50ms ease;
+    -webkit-user-select: none;
+    white-space: nowrap;
+}
+
+
+.emotion-stats {
+  font-size: 13px;
+  color : rgb(102, 102, 102);
+}
+
+
+.emotion-icon .emotion-icon-style_4.emotion-icon-style_4 {
+    transform: none;
+}
+.emotion-icon-style_2 .emotion-icon-style_5, .emotion-icon-style_2 ._9_0 {
+    display: block;
+    line-height: 1;
+}
+.emotion-icon .emotion-icon-style_4 {
+    display: block;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -50%;
+    position: absolute;
+    top: 50%;
+}
+.emotion-icon-style_1, .emotion-icon-style_5 {
+    height: 24px;
+    width: 24px;
+}
+
+.emotion-icon-style_stat {
+  opacity: 1;
+}

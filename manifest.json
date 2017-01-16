@@ -1,0 +1,33 @@
+{
+   "author": "Ismail Baygin",
+   "browser_action": {
+      "default_icon": "icon.png",
+      "icons": [ "icon.png" ],
+      "name": "Eksi Ifadeler"
+   },
+    "background": {
+    "scripts": ["jquery.min.js", "bg.js"]
+  },
+   "content_scripts": [ {
+      "css": [ "fix.css" ],
+      "js": ["jquery.min.js", "script.js"],
+      "matches": [ "https://eksisozluk.com/entry/*", "https://eksisozluk.com/*--*"]
+   },
+ {
+      "css": [ "fix.css" ],
+      "js": ["jquery.min.js", "biriscript.js"],
+      "matches": [ "https://eksisozluk.com/biri/*"]
+   }],
+   "description": "Ekşi Sözlük entrylerine ifade bırakma özelliği getirir.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "Eksi Ifadeler",
+   "permissions": ["cookies", "storage",  "tabs", "*://eksisozluk.com/*","https://eksistats.com/*", "*://eksiifadeler.com/*", "webRequest", "webRequestBlocking"],
+   "web_accessible_resources": ["icons/*.png"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}
