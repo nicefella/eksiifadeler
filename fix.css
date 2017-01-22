@@ -1,7 +1,7 @@
 .entry-emotions {
   float: left;
   clear: both;
-/*  margin-top: 25px; */
+  margin-top: 10px; 
   cursor: pointer;
   height: 25px;
 }
@@ -164,7 +164,7 @@
     left: 50%;
     position: absolute;
     text-align: center;
-    top: -35px;
+    top: -30px;
     transform: translateX(-50%);
 }
 
