@@ -1,8 +1,9 @@
 .entry-emotions {
   float: left;
   clear: both;
-  margin-top: 25px;
+/*  margin-top: 25px; */
   cursor: pointer;
+  height: 25px;
 }
 
 .entry-emotions ul li {
@@ -69,7 +70,7 @@
 }
 
 .emotion-icon:hover {
-    transform: scale(3.5, 3.5);
+  /*  transform: scale(1.2, 1.2); */
     opacity: 1;
 }
 
@@ -163,7 +164,7 @@
     left: 50%;
     position: absolute;
     text-align: center;
-    top: -60px;
+    top: -35px;
     transform: translateX(-50%);
 }
 

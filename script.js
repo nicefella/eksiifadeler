@@ -5,7 +5,7 @@ var $topNavigation = $(document.getElementById("top-navigation"));
 var $topicid = $("#topic").find("h1").data("id");
 var $topic = $("#topic").find("h1").data("title");
 var $authorLink = $topNavigation.find("a[href*='/biri/']");
-var titles =["Eğlenceli", "Harika tespit", "Bilgilendirici", "Ufkum 2x", "Troll", "Çöp"];
+var titles =["Eğlenceli", "Harika tespit", "Bilgilendirici", "Ufkum 2x", "Troll", "Çöp", "Derdi öpülesi", "Sarsıcı", "Sinir bozucu", "Yalan yanlış"];
 AUTHOR = $authorLink.attr("title");
 
 
@@ -101,7 +101,6 @@ $(document).on('click', '.emotion-node', function(e){
 
 if (!$(_this).hasClass("emotion-stat-state")) {
 	chrome.runtime.sendMessage({cmd: "vote", dd: dd, author: AUTHOR, topic: $topic, topicid: $topicid, session : SESSIONID}, function(data) {	
-		console.log(data);
 			updateglobal(data);
 			redraw(_this.parent().parent().parent().parent().find(".inner-emotions"), dd.split('/')[2], [data]);			
     	});

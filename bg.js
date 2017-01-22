@@ -1,5 +1,9 @@
 
+//var SERVICE_URL = 'http://localhost:8091';
+//var SERVICE_URL = 'http://www.watchmeenglish.com:8091';
+//var SERVICE_URL = 'http://localhost:8091';
 var SERVICE_URL = 'https://eksiifadeler.com';
+
 
 chrome.webRequest.onBeforeRequest.addListener(function (details) {
         return {

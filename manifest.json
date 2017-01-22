@@ -29,5 +29,5 @@
    "permissions": ["cookies", "storage",  "tabs", "*://eksisozluk.com/*","https://eksistats.com/*", "*://eksiifadeler.com/*", "webRequest", "webRequestBlocking"],
    "web_accessible_resources": ["icons/*.png"],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0.2"
+   "version": "1.0.5"
 }
